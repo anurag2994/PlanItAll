@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic4">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_TextDateTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Choose Contact and Time"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <Button
+        android:id="@+id/btn_contacts"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/background_light"
+        android:maxLength="10"
+        android:text="Contacts"
+        android:textColor="?attr/colorControlNormal"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="190dp"
+        android:layout_height="52dp"
+        android:layout_alignLeft="@+id/btn_call"
+        android:layout_alignStart="@+id/btn_call"
+        android:layout_below="@+id/btn_call"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/pic4"
+        android:text="CANCEL"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="190dp"
+        android:layout_height="52dp"
+        android:layout_alignLeft="@+id/btn_msg"
+        android:layout_alignStart="@+id/btn_msg"
+        android:layout_below="@+id/btn_msg"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pic4"
+        android:text="schedule call"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <Button
+        android:id="@+id/btn_msg"
+        android:layout_width="190dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/btn_timePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:background="@drawable/pic4"
+        android:text="schedule message"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <TextView
+        android:id="@+id/txt_TextDateTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TEXTO POR DEFEITO!"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn_datePicker"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_contacts"
+        android:layout_alignStart="@+id/btn_contacts"
+        android:layout_below="@+id/btn_contacts"
+        android:layout_marginTop="34dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@android:color/background_light"
+        android:maxLength="10"
+        android:text="Date"
+        android:textColor="?android:attr/colorControlNormal"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_timePicker"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_datePicker"
+        android:layout_alignStart="@+id/btn_datePicker"
+        android:layout_below="@+id/btn_datePicker"
+        android:layout_marginTop="31dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Time "
+        android:textColor="?attr/colorControlNormal"
+        android:textStyle="bold" />
+
+</RelativeLayout>

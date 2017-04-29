@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Planner</string>
+    <string name="dd_mm_yyyy">dd/mm/YYYY</string>
+</resources>
